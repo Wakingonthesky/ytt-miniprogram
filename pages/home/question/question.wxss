@@ -1,0 +1,100 @@
+/* pages/home/question/question.wxss */
+.page{
+  display: flex;
+  justify-content: center;
+}
+
+.title{
+  color: var(#333);
+  text-align: center;
+  font-family: Roboto;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.fill-in-block{
+  margin-top: 10px;
+  display: flex;
+  width: 93%;
+  height: 214px;
+  border-radius: 8px;
+  background: #FFF;
+  align-items: flex-end;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.group{
+  display: flex;
+  align-items: center;
+  margin-bottom: 18px;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+.picture{
+  width: 32px;
+  height: 32px;
+  flex-shrink: 0;
+  margin-right: 6px;
+}
+.wordNum{
+  color: rgba(102, 102, 102, 1);
+  font-family: Roboto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: -0.333px;
+  margin-left: 6px;
+}
+.commit-button{
+  display: flex;
+  width: 72px;
+  height: 32px;
+  flex-shrink: 0;
+  border-radius: 8px;
+  background:#C9EFFF;
+  justify-content: center;
+  align-items: center;
+  margin-left: 6px;
+}
+.commit-button-text{
+  color: rgba(51, 51, 51, 1);
+  text-align: center;
+  font-family: Roboto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: -0.333px;
+}
+.cancel-button-text{
+  color: rgba(102, 102, 102, 1);
+  font-family: Roboto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: -0.333px;
+  margin-right: 6px;
+}
+.fill-pre-text{
+  color: rgba(153, 153, 153, 1);
+  font-family: Roboto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: -0.333px;
+}
+.fill{
+  width: 90%;
+  height: 60%;
+  display: flex;
+  /* justify-content: center; */
+  /* align-items: flex-start; */
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-top: 3%;
+}

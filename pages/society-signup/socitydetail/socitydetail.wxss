@@ -1,0 +1,72 @@
+/* pages/society-signup/socitydetail/socitydetail.wxss */
+page{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+}
+.background {
+  width: 700rpx;
+  height: 1150rpx;
+  border-radius: 15rpx 15rpx 0rpx 0rpx;
+  margin-top: 30rpx;
+  background: #FFF;
+  display: flex;
+  flex-direction: column;
+  align-items:center;
+}
+.img{
+  margin-top: 40rpx;
+}
+.img image{
+  width: 620rpx;
+  height: 300rpx;
+  border-radius: 15rpx;
+}
+.content{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  /* border: 1px solid black; */
+  height: 900rpx;
+  width: 620rpx;
+}
+.act-name{
+  font-weight: bold;
+  font-size: 32rpx;
+  margin-bottom: 20rpx;
+}
+.box{
+  height: 50rpx;
+  width: 620rpx;
+  /* border: 1px solid black; */
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+}
+.box image{
+  width: 40rpx;
+  height: 40rpx;
+  margin-right: 10rpx;
+}
+.font{
+  font-size: 25rpx;
+  color: #808080;
+}
+.box2{
+  /* border: 1px solid black; */
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  overflow: hidden;
+  margin-top: 30rpx;
+}
+.signupbutton button{
+  background-color: #92dfff;
+  height: 70rpx;
+  width: 500rpx;
+  line-height: 70rpx;
+  font-size: 36rpx;
+  margin-bottom: 50rpx;
+}

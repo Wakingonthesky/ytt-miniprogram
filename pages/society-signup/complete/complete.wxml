@@ -1,0 +1,8 @@
+<!--pages/complete/complete.wxml-->
+
+<view>
+    <t-result title="你已成功提交" theme="success"></t-result>
+    <view class="component back">
+        <t-button bind:tap="clickReturn" size="large">返回</t-button>
+    </view>
+</view>

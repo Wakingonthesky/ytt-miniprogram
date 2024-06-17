@@ -1,0 +1,26 @@
+/* pages/societyInfo/societyInfo.wxss */
+.block {
+    display: block;
+    margin-bottom: 32rpx;
+   
+    
+}
+.Input{
+  height: 100rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 30rpx 0rpx 0rpx 0rpx;
+}
+.search{
+  height: 15rpx;
+  width: 84%;
+  border-radius: 20rpx;
+  
+}
+t-class-prefix-icon{
+  margin-top: 10rpx;
+}
+.grid{
+  margin-top: 40rpx;
+}

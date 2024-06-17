@@ -1,0 +1,42 @@
+<!--pages/index.wxml-->
+<view>
+  <view class="swiper">
+    <t-swiper height="300rpx" current="{{current}}" autoplay="{{autoplay}}" duration="{{duration}}" interval="{{interval}}" list="{{swiperList}}" navigation="{{ { type: 'dots-bar' } }}" />
+  </view>
+  <view>
+    <t-grid column="{{3}}" theme="card">
+      <t-grid-item text="社团广场" image="/images/社团申请.png" bindtap="clickButton1" />
+      <!--t-grid-item text="活动预约" image="https://tdesign.gtimg.com/miniprogram/images/example1.png" /-->
+      <t-grid-item text="扫码报名" image="/images/扫码报名.png" bindtap="clickButton2"/>
+      <t-grid-item text="了解紫团" image="/images/了解紫团.png" bindtap="clickButton3"/>
+    </t-grid>
+  </view>
+  <view class="waterfall">
+    <view class="content-left">
+      <block wx:for="{{list}}" wx:key="list">
+        <template is='item-data' data='{{...item}}' wx:if="{{index % 2 ==0}}"></template>
+      </block>
+    </view>
+    <view class="content-right">
+      <block wx:for="{{list}}" wx:key="list">
+        <template is='item-data' data='{{...item}}' wx:if="{{index % 2 ==1}}"></template>
+      </block>
+    </view>
+  </view>
+</view>
+
+<!-- 定义模板 -->
+<template name="item-data">
+  <view class="content-item" data-id="{{act_id}}" bind:tap="gotoInfo">
+    <view class="content-action"> <text class="action">  热门活动</text></view>
+    <view class="img">
+      <image src="../../images/风景4.jpg" class="content-item-img" mode="widthFix" />
+    </view>
+    <view class="content-item-box">
+      <view class="content-item-title"><text class="title">{{act_name}}</text></view>
+      <view class="content-item-main">
+        <text class="main">{{act_content}}</text>
+      </view>
+    </view>
+  </view>
+</template>

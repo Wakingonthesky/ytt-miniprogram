@@ -1,0 +1,55 @@
+/* pages/home/about-us/about-us.wxss */
+page{
+  background-image: linear-gradient(to bottom, #a9e5ff,  #e4e4e4, #e6e6e6);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
+}
+.backgroud{
+  background-color: #ffffff;
+  height: 1100rpx;
+  width: 700rpx;
+  margin-top: 50rpx;
+  border-radius: 15rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.img{
+
+  height: 260rpx;
+  width: 260rpx;
+}
+.ytt{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.ytt text{
+  margin-top: 40rpx;
+  color: #808080b6;
+  font-size: 30rpx;
+}
+.info {
+  /* border: 1px solid red; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 90%;
+  height: 400rpx;
+  margin-top: 120rpx;
+}
+.info-cell{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+.cell1{
+  --td-cell-bg-color: #f3f6f6;  
+  border-radius: 20rpx;
+  --td-cell-height:90rpx;
+  margin-bottom: 20rpx;
+}

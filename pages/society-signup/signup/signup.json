@@ -1,0 +1,9 @@
+{
+  "navigationBarTitleText": "报名信息填写",
+  "usingComponents": {
+    "t-input": "tdesign-miniprogram/input/input",
+    "t-dialog": "tdesign-miniprogram/dialog/dialog",
+    "t-radio": "tdesign-miniprogram/radio/radio",
+    "t-toast": "tdesign-miniprogram/toast/toast"
+  }
+}

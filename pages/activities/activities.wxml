@@ -1,0 +1,41 @@
+<!--pages/activities/activities.wxml-->
+<t-tabs defaultValue="{{0}}" bind:change="onTabsChange" bind:click="onTabsClick" t-class="custom-tabs">
+  <t-tab-panel label="热门活动" value="0" />
+  <t-tab-panel label="已结束活动" value="1" />
+</t-tabs>
+
+<view wx:if="{{value == 0}}">
+  <view class="waterfall">
+    <view class="content">
+      <block wx:for="{{list}}" wx:key="list">
+        <template is='item-data' data='{{...item}}'></template>
+      </block>
+    </view>
+  </view>
+</view>
+
+<view wx:if="{{value == 1}}">
+  <view class="waterfall">
+    <view class="content">
+      <block wx:for="{{list}}" wx:key="list">
+        <template is='item-data' data='{{...item}}'></template>
+      </block>
+    </view>
+  </view>
+</view>
+
+<!-- 定义模板 -->
+<template name="item-data">
+  <view class="socityname"><text class="socity">{{act_socity}}</text></view>
+  <view class="content-item" data-id="{{act_id}}" bind:tap="gotoInfo">
+    <view class="one">
+      <view class="content-title"><text class="title">{{act_name}}</text></view>
+      <view class="content-time"><text class="time">{{act_start}}</text></view>
+      <view class="content-main"><text class="main">{{act_content}}</text></view>
+      <view class="content-action"> <text class="action">{{}}</text></view>
+    </view>
+    <view class="two">
+      <view class="img"><image src="../../images/风景3.jpg" mode=""/></view>
+    </view>
+  </view>
+</template>

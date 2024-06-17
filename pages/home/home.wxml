@@ -1,0 +1,25 @@
+<!--pages/home/home.wxml-->
+<view class="home">
+  <view class="container">
+    <view class="head"></view>
+    <view class="index">
+      <view class="index1" ><text>{{userName}}</text></view>
+      <view class="index2" ></view>
+    </view>
+    <view class="main">
+      <view class="information" bind:tap="clickProfile">
+        <view class="myImage" style="position: relative; left: 193rpx; top: -131rpx">
+          <t-image src="{{userProfile}}" height="170rpx" width="170rpx" shape="circle" class="image"></t-image>
+        </view>
+        <view class="list">
+          <t-cell-group theme="card" class="mylist">
+            <t-cell title="我的账号" leftIcon="/images/我的账号.png" hover arrow bind:tap="clickMyInformation" class="gh" />
+            <t-cell title="我的报名" leftIcon="/images/版本信息.png" hover arrow bind:tap="clickSignUpInfo" />
+            <t-cell title="问题反馈" leftIcon="/images/问题反馈.png" hover arrow bind:tap="clickQuestion" />
+            <t-cell title="关于我们" leftIcon="/images/关于我们.png" hover arrow bind:tap="clickAboutUs" />
+          </t-cell-group>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

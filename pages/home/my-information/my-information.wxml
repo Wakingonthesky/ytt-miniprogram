@@ -1,0 +1,31 @@
+<!--pages/home/my-information/my-information.wxml-->
+<view class="body">
+
+  <!-- <view> <text class="info">姓名：{{name}}</text></view>
+  <view> <text class="info">学号：{{studentID}}</text></view> -->
+  <!--view class="info-item"> <text class="info">手机：{{phone}}</text></view-->
+  <view class="container">
+    <view class="avatar">
+      <t-image src="{{userInfo}}" height="200rpx" width="200rpx" shape="circle"></t-image>
+    </view>
+    <view class="info">
+      <view class="info-cell">
+        <t-cell class="cell1" title="编辑昵称" hover note="{{name}}" arrow bind:tap="setname"  data-key="showWithInput" data-id="1" />
+      </view>
+      <view class="info-cell">
+        <t-cell class="cell1" title="手机号" hover note="{{phone}}" arrow bind:tap="setphone" data-key="showWithInput" data-id="2" />
+      </view>
+      <view class="info-cell">
+        <t-cell class="cell1" title="修改密码" hover  arrow bind:tap="setpassword"   />
+      </view>
+      <view class="btn">
+        <t-button theme="primary" size="large" block class="btn1" bind:tap="clicklogout">退出登录</t-button>
+      </view>
+      <view>
+        <t-dialog visible="{{showWithInput}}" title="{{title}}" confirm-btn="确定" cancel-btn="取消" bind:confirm="closeDialogConfirm" bind:cancel="closeDialogCancel" data-id="{{id}}" bind:input="getInut">
+          <t-input borderless class="dialog-input" clearable slot="content"  placeholder-class="placeholder" bindchange="input" model:value="{{inputvalue}}" bindinput="getInput"  placeholder="{{placeholder}}"/>
+        </t-dialog>
+      </view>
+    </view>
+  </view>
+</view>

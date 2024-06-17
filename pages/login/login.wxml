@@ -1,0 +1,64 @@
+<!--pages/login/login.wxml-->
+<t-message id="t-message" />
+<view class="login">
+
+  <view class="header">
+    <text id="welcome">{{signUp? '欢迎注册' : '欢迎登录'}}</text>
+  </view>
+  <view class="container">
+    <view class="index">
+      <view class="index1"><text>{{signUp? '注册' : '登录'}}</text></view>
+      <view class="index2"></view>
+    </view>
+    <view class="main">
+      <text id="phonecode" class="main-font">手机号</text>
+      <view class="input">
+
+        <view class="inputset">
+          <t-input placeholder="请输入手机号" model:value="{{phone}}" tips="{{ phoneError ? '手机号输入不正确' : '' }}" bindchange="onPhoneInput" status="{{phoneError ? 'error' : ''}}" clearable />
+        </view>
+
+        <text class="main-font">密码</text>
+        <view class="inputset">
+          <t-input type="password" placeholder="请输入密码" model:value="{{password}}" bindchange="onChange" clearable />
+        </view>
+
+        <view wx:if="{{signUp}}"><text class="main-font">确认密码</text></view>
+        <view class="inputset" wx:if="{{signUp}}">
+          <t-input type="password" placeholder="请再次输入密码" tips="{{(!password_same&&passwordAgain!=='')? '两次密码输入不一致' : '' }}" model:value="{{passwordAgain}}" bindchange="same" clearable status="{{(!password_same&&passwordAgain!=='')? 'error' : '' }}" />
+        </view>
+
+        <view wx:if="{{signUp}}"><text class="main-font">验证码</text></view>
+        <view class="inputset" wx:if="{{signUp}}">
+          <t-input style="display: flex;flex-direction: row;" placeholder="请输入验证码" model:value="{{verify}}" bindchange="onChange" clearable>   
+          <t-button class="verify-button" slot="suffix" theme="light" size="extra-small" bind:tap="sendVerify" disabled="{{smsFlag}}" style="background-color:{{sendColor}};color: #474747c5;"> {{sendTime}} </t-button>
+          </t-input>
+        </view>
+
+      </view>
+      <view class="loginButton">
+        <button class="loginbutton" bind:tap="clickLogin" disabled="{{disable}}">{{signUp? '注册' : '登录'}}</button>
+      </view>
+      <view class="bottom">
+        <view>
+          <t-button theme="primary" size="large" variant="text" bind:tap="forgetpassword" wx:if="{{!signUp}}"><text class="bottom-font">忘记密码? </text></t-button>
+        </view>
+        <view>
+          <t-button wx:if="{{!signUp}}" theme="primary" size="large" variant="text" bind:tap="clickChangeSignup"><text class="bottom-font">注册账号</text></t-button>
+          <t-button wx:if="{{signUp}}" class="bottom-havecount" theme="primary" size="large" variant="text" bind:tap="clickChangeSignup"><text class="bottom-font">已有账号</text></t-button>
+        </view>
+      </view>
+      <view class="col" wx:if="{{!signUp}}">
+        <image src="../../images/微信一键登录.png" mode="" />
+        <image src="../../images/手机验证码登录.png" mode="" />
+      </view>
+      <view class="Privacy">
+        <t-radio class="privacy" default-checked="true" bind:change="onPrivacyChange">
+          <navigator url="/pages/index/privacy/privacy"><text style="position: relative; left: 1rpx; top: -13rpx">我同意 《用户服务协议》 及 《隐私条款》</text>
+          </navigator>
+        </t-radio>
+      </view>
+    </view>
+  </view>
+</view>
+<!--t-footer text="重邮天协紫微观星团 研发"></t-footer-->

@@ -1,0 +1,25 @@
+<!--pages/activities/actInfo/actInfo.wxml-->
+<view class="background">
+  <view class="img"><image src="../../../images/风景2.jpg" mode=""/></view>
+  <view class="content">
+    <view class="act-name">{{list.act_name}}</view>
+    <view class="box">
+      <image src="../../../images/Users.png" mode=""/>
+      <view class="font">{{list.act_socity}}</view>
+    </view>
+    <view class="box">
+      <image src="../../../images/Map_Pin.png" mode=""/>
+      <view class="font">{{list.act_place}}</view>
+    </view>
+    <view class="box">
+      <image src="../../../images/Clock.png" mode=""/>
+      <view class="font">{{list.act_start}}</view>
+    </view>
+    <view class="box2">
+      <view class="font">{{list.act_content}}</view>
+    </view>
+  </view>
+  <view class="signupbutton">
+    <button bind:tap="gotoRegister" disabled="{{disable}}">{{!disable ? '我要报名': '活动已结束'}}</button>
+  </view>
+</view>

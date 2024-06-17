@@ -1,0 +1,24 @@
+<!--pages/society-signup/society_detailed/society_detailed.wxml-->
+<!-- <text>pages/society-signup/society_detailed/society_detailed.wxml</text> -->
+<t-message id="t-message" />
+<!-- <t-grid class="block" column="{{1}}" align="left">
+    <t-grid-item wx:for="{{detail_list}}" wx:key="*this" data-text="{{item}}" text="{{item}}" class="items" bindtap="clickSociety" image="../../../images/1.jpg" />
+    
+</t-grid> -->
+<view class="waterfall">
+  <view class="content">
+    <block wx:for="{{detail_list}}"  wx:key="detail_list" >
+      <view class="content-item" data-text="{{item}}" bind:tap="clickSociety">
+        <view class="one">
+          <view class="content-title"><text class="title">{{item}}</text></view>
+          <view class="content-main"><text class="main"></text></view>
+        </view>
+        <view class="two">
+          <view class="img">
+            <image src="../../../images/1.jpg" mode="" />
+          </view>
+        </view>
+      </view>
+    </block>
+  </view>
+</view>

@@ -1,0 +1,12 @@
+<!--pages/societyInfo/societyInfo.wxml-->
+<!--t-button bind:tap="clickSociety">test</t-button-->
+<view>
+  <view class="Input">
+    <t-input prefixIcon="search" placeholder="请输入文字"  class="search"/>
+  </view>
+  <view class="grid">
+    <t-grid class="block" column="{{3}}" theme="card">
+      <t-grid-item class="content" wx:for="{{info}}" wx:key="id" text="{{item.text}}" image="{{item.img}}" bindtap="clickSociety" data-text="{{item.text}}" data-id="{{item.id}}" />
+    </t-grid>
+  </view>
+</view>

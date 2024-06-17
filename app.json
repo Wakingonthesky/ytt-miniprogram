@@ -1,0 +1,70 @@
+{
+    "pages": [
+        "pages/index/index",
+        "pages/home/home",
+        "pages/activities/activities",
+        "pages/home/my-information/my-information",
+        "pages/home/question/question",
+        "pages/home/signup-info/signup-info",
+        "pages/login/login",
+        "pages/society-signup/complete/complete",
+        "pages/society-signup/signup/signup",
+        "pages/society-signup/society/society",
+        "pages/society-signup/societyInfo/societyInfo",
+        "pages/society-signup/societyList/societyList",
+        "pages/index/privacy/privacy",
+        "pages/activities/actInfo/actInfo",
+        "pages/activities/register/register",
+        "component/waterfall/waterfall",
+        "pages/home/about-us/about-us",
+        "pages/index/zituan_Info/zituan_Info",
+        "pages/home/setpassword/setpassword",
+        "pages/society-signup/socitydetail/socitydetail",
+        "pages/home/setpassword2/setpassword2"
+    ],
+    
+    "tabBar": {
+        "custom": false,
+        "color": "#808080",
+        "selectedColor": "#000000",
+        "list": [
+            {
+                "pagePath": "pages/index/index",
+                "text": "首页",
+                "iconPath": "./images/首页.png",
+                "selectedIconPath": "./images/首页2.png"
+            },
+            {
+                "pagePath": "pages/activities/activities",
+                "text": "活动",
+                "iconPath": "./images/活动.png",
+                "selectedIconPath": "./images/活动2.png"
+            },
+            {
+                "pagePath": "pages/home/home",
+                "text": "我的",
+                "iconPath": "./images/我的.png",
+                "selectedIconPath": "./images/我的2.png"
+            }
+        ]
+    },
+    "window": {
+        "backgroundTextStyle": "light",
+        "navigationBarBackgroundColor": "#ffffff",
+        "backgroundColor": "#fff",
+        "navigationBarTitleText": "邮团团",
+        "navigationBarTextStyle": "black"
+    },
+    "sitemapLocation": "sitemap.json",
+    "usingComponents": {
+        "t-tab-bar": "tdesign-miniprogram/tab-bar/tab-bar",
+        "t-tab-bar-item": "tdesign-miniprogram/tab-bar-item/tab-bar-item",
+        "t-icon": "tdesign-miniprogram/icon/icon",
+        "t-button": "tdesign-miniprogram/button/button",
+        "t-input": "tdesign-miniprogram/input/input"
+    },
+    "resolveAlias": {
+        "@utils/*": "utils/*",
+        "~/*": "/*"
+    }
+}

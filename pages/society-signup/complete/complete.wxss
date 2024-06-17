@@ -1,0 +1,17 @@
+/* pages/complete/complete.wxss */
+.t-result {
+    margin: 200rpx 0;
+}
+
+.component {
+    display: flex;
+    flex-direction: column;
+}
+
+.back {
+    margin: 100rpx 0;
+}
+
+.t-button {
+    width: 300rpx;
+}

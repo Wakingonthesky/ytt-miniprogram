@@ -1,0 +1,17 @@
+<!--pages/home/question/question.wxml-->
+<view class="page">
+ 
+  <view class="fill-in-block">
+    <textarea bindinput="inputs" class="fill" maxlength="500" placeholder="请在这里写下你的问题吧..."></textarea>
+    <view class="group">
+      <image class="picture" src="/images/问题反馈图片.png"></image>
+      <span class="wordNum">{{wordNum|0}}/500</span>
+    </view>
+    <view class="group">
+      <text class="cancel-button-text">取消</text>
+      <button form-type="submit" class="commit-button">
+        <text class="commit-button-text">提交</text>
+      </button>
+    </view>
+  </view>
+</view>

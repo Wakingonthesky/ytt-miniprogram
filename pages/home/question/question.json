@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "问题反馈",
+  "usingComponents": {
+    "t-button": "tdesign-miniprogram/button/button"
+  }
+}

@@ -1,0 +1,8 @@
+{
+    "navigationBarBackgroundColor": "#a9e5ff",
+    "usingComponents": {
+        "t-image": "tdesign-miniprogram/image/image",
+        "t-cell-group": "tdesign-miniprogram/cell-group/cell-group",
+        "t-cell": "tdesign-miniprogram/cell/cell"
+    }
+}

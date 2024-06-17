@@ -1,0 +1,21 @@
+<!--pages/signup/signup.wxml-->
+
+
+<view class="form">
+  <view style="margin-top: 50rpx;"></view>
+  <view class="font"><text>姓名*</text></view>
+  <view >
+    <t-input class="iput" model:value="{{name}}" placeholder="请输入姓名" bindchange="onNameInput" tips="{{ nameError ? '请输入正确的姓名' : '' }}"/>
+  </view>
+  <view class="font"><text>学号*</text></view>
+  <view >
+    <t-input  class="iput" model:value="{{studentID}}" placeholder="请输入学号" bindchange="onStudentIDInput" tips="{{ studentIDError ? '请输入正确的学号' : '' }}"/>
+  </view>
+  <view class="font"><text>手机号*</text></view>
+  <view>
+    <t-input class="iput" model:value="{{phone}}" placeholder="请输入手机号" bindchange="onPhoneInput" tips="{{ phoneError ? '请输入正确的手机号' : '' }}"/>
+  </view>
+  <view class="signupbutton">
+    <button bind:tap="gotoRegister" disabled="{{disable}}">提交</button>
+  </view>
+</view>

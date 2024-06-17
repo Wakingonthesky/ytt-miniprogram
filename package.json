@@ -1,0 +1,16 @@
+{
+  "name": "youtuantuan_frontend1",
+  "version": "1.0.0",
+  "description": "This is the code repositiry of youtuantuan.\r # Test",
+  "main": ".eslintrc.js",
+  "dependencies": {
+    "lin-ui":"~0.6.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "switch:dev": "node script.env.js --dev",
+    "switch:prod": "node script.env.js --prod"
+  },
+  "author": "",
+  "license": "ISC"
+}

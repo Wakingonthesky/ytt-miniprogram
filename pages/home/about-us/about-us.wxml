@@ -1,0 +1,19 @@
+<!--pages/home/about-us/about-us.wxml-->
+<view class="backgroud">
+  <view style="display: flex;flex-direction: row;justify-content: center;margin-top: 50rpx;">
+    <image class="img" src="../../../images/logo1 1.png" mode="" />
+  </view>
+  <view class="ytt"><text>邮团团---便捷你的校园生活</text></view>
+  <view class="info">
+    <view class="info-cell">
+      <t-cell class="cell1" title="邮团团协议" hover note="{{name}}" arrow />
+    </view>
+    <view class="info-cell">
+        <t-cell class="cell1" title="版本信息" hover note="v1.0.1"   />
+      </view>
+      <view class="info-cell">
+        <t-cell class="cell1" title="联系我们" hover note="{{name}}" arrow  />
+      </view>
+  </view>
+
+</view>

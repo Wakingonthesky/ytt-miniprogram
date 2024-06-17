@@ -1,0 +1,42 @@
+<!--pages/signupInfo/signupInfo.wxml-->
+<view class="waterfall">
+    <view class="content">
+      <block wx:for="{{societylist}}" wx:key="societylist">
+        <template is='item-data-society' data='{{...item}}'></template>
+      </block>
+    </view>
+</view>
+<template name="item-data-society">
+  <view class="content-item">
+    <view class="one">
+      <view class="content-title"><text class="title">{{society_name}}</text></view>
+      <!-- <view class="content-time"><text class="time">{{time}}</text></view>
+      <view class="content-main"><text class="main">{{content}}</text></view>
+      <view class="content-action"> <text class="action">热门</text></view> -->
+    </view>
+    <view class="two">
+      <view class="img"><image src="../../../images/风景1.jpg" mode=""/></view>
+    </view>
+  </view>
+</template>
+
+<view class="waterfall">
+    <view class="content">
+      <block wx:for="{{actlist}}" wx:key="actlist">
+        <template is='item-data-act' data='{{...item}}'></template>
+      </block>
+    </view>
+</view>
+<template name="item-data-act">
+  <view class="content-item">
+    <view class="one">
+      <view class="content-title"><text class="title">{{act_name}}</text></view>
+      <!-- <view class="content-time"><text class="time">{{time}}</text></view>
+      <view class="content-main"><text class="main">{{content}}</text></view>
+      <view class="content-action"> <text class="action">热门</text></view> -->
+    </view>
+    <view class="two">
+      <view class="img"><image src="../../../images/风景1.jpg" mode=""/></view>
+    </view>
+  </view>
+</template>
