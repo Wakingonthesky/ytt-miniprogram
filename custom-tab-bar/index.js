@@ -111,5 +111,5 @@ Component({
 
 
 })
-// 后面写代码的记住：再添加页面别忘了在那个页面的onShow加这个函数。不然tTabBar不刷新
+// 后面写代码的记住：再添加页面别忘了在那个页面的onShow加这个函数。不然TabBar不刷新
 // if (typeof this.getTabBar === 'function' && this.getTabBar()) {this.getTabBar().setData({value: 1//这个不改会导致乱跳}) }

@@ -7,7 +7,7 @@ Page({
     imageSrcPhone: "../../images/手机验证码登录.png",
     phoneError: false,
     disable: true,
-    isPrivacy: true,
+    isPrivacy: false,
     signUp: false,
     password: "",
     passwordAgain: "",
@@ -189,6 +189,7 @@ Page({
     const {
       checked
     } = e.detail
+    console.log(checked)
     this.setData({
       isPrivacy: checked
     })

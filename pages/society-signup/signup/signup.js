@@ -25,17 +25,17 @@ Page({
 
   onInputChange() {
     console.log(this.data)
-    if (!this.data.studentID || !this.data.phone || !this.data.name) {
+    if (!this.data.studentID || !this.data.name) {
       console.log("至少有一个是空的")
       console.log(!this.data.name)
       console.log(!this.data.studentID)
-      console.log(!this.data.phone)
+      // console.log(!this.data.phone)
 
       this.setData({
         disable: true
       })
     } else {
-      if (this.data.nameError || this.data.studentIDError || this.data.phoneError) {
+      if (this.data.nameError || this.data.studentIDError) {
         console.log("至少有一个是错的")
         this.setData({
           disable: true
@@ -81,7 +81,7 @@ Page({
     this.onInputChange()
   },
 
-  onPhoneInput(e) {
+  /*onPhoneInput(e) {
     const isPhoneNumber = /^[1][3,4,5,7,8,9][0-9]{9}$/.test(e.detail.value);
     if (this.data.phone == null) {
       this.setData({
@@ -94,7 +94,8 @@ Page({
       });
     }
     this.onInputChange()
-  },
+  },*/
+
   gotoRegister() {
     var URL = require('../../../config')
     var conf = `${URL.config[URL.env].API_HOST}${URL.config[URL.env].soc.hook}${URL.config[URL.env].soc.signup}`

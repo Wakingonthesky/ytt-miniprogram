@@ -53,8 +53,8 @@
         <image src="../../images/手机验证码登录.png" mode="" />
       </view>
       <view class="Privacy">
-        <t-radio class="privacy" default-checked="true" bind:change="onPrivacyChange">
-          <navigator url="/pages/index/privacy/privacy"><text style="position: relative; left: 1rpx; top: -13rpx">我同意 《用户服务协议》 及 《隐私条款》</text>
+        <t-radio class="privacy" bind:change="onPrivacyChange">
+          <navigator url="/pages/index/privacy/privacy"><text style="position: relative; left: 1rpx; top: -13rpx">我同意《用户服务协议》及《隐私条款》</text>
           </navigator>
         </t-radio>
       </view>

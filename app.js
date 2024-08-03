@@ -15,7 +15,7 @@ App({
       // 这个if判断注释掉就能暂停跳转到登录页面
       var token = wx.getStorageSync('token')
       // console.log(token)
-      if (token === '' && res.path != 'pages/login/login') {
+      if (token === '' && res.path != 'pages/login/login' && res.path !='pages/index/privacy/privacy') {
         wx.navigateTo({
           url: '/pages/login/login',
         })

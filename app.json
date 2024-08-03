@@ -17,9 +17,9 @@
         "pages/activities/register/register",
         "component/waterfall/waterfall",
         "pages/home/about-us/about-us",
-        "pages/index/zituan_Info/zituan_Info",
+        "pages/index/purple-Info/purple-Info",
         "pages/home/setpassword/setpassword",
-        "pages/society-signup/socitydetail/socitydetail",
+        "pages/society-signup/societydetail/societydetail",
         "pages/home/setpassword2/setpassword2"
     ],
     

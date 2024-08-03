@@ -21,7 +21,7 @@ Page({
     console.log(e.currentTarget.dataset.text)
     console.log(society_id)
     wx.navigateTo({
-      url: '/pages/society-signup/socitydetail/socitydetail?key=' + e.currentTarget.dataset.text + "&id=" + society_id
+      url: '/pages/society-signup/societydetail/societydetail?key=' + e.currentTarget.dataset.text + "&id=" + society_id
     })
 
   },
