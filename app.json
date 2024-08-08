@@ -20,9 +20,9 @@
         "pages/index/purple-Info/purple-Info",
         "pages/home/setpassword/setpassword",
         "pages/society-signup/societydetail/societydetail",
-        "pages/home/setpassword2/setpassword2"
+        "pages/home/setpassword2/setpassword2",
+        "pages/index/service/service"
     ],
-    
     "tabBar": {
         "custom": false,
         "color": "#808080",
